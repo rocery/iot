@@ -57,13 +57,18 @@ def upload_file():
             except Exception as read_error:
                 print(f"Error reading file: {read_error}")
             
-            return jsonify({
-                'status': 'success', 
-                'filename': filename, 
+            response = {
+                'status': 'success',
+                'filename': filename,
                 'size': file_size,
                 'save_path': save_path,
                 'jumlah_data': jumlah_baris
-            }), 200
+            }
+            
+            # Print the response dictionary
+            print("Response JSON:", response)
+            
+            return jsonify(response), 200
         else:
             print(f"File save failed: {save_path}")
             return jsonify({'status': 'failed'}), 500

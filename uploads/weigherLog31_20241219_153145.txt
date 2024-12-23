@@ -1,3 +1,0 @@
-IoT-31,Weigher | Kerupuk 31,TIC TIC CBP,10.49,192.168.7.31,TEST
-IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 7.39,192.168.7.31
-IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 6.86,192.168.7.31,TEST,A
