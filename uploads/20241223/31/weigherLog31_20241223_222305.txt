@@ -1,0 +1,3 @@
+IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 1.96,192.168.7.31,LAN
+IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 1.99,192.168.7.31,LAN
+IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 1.99,192.168.7.31,LAN
