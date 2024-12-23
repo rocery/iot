@@ -1,7 +1,7 @@
-from flask import Flask, request, jsonify  # Add jsonify to imports
+from flask import Flask, request, jsonify
 import os
 from datetime import datetime
-from script.weigher_process_log import log_process
+from script.weigher_process_log import log_process, get_baris
 
 app = Flask(__name__)
 
@@ -35,7 +35,14 @@ def upload_file():
         save_path = os.path.join('uploads', dateToday, filename_without_ext[-2:], filename)
         file.save(save_path)
         
-        log_process(save_path)
+        dataCount = 0
+        with open(save_path, 'r') as file:
+            dataCount = file.readlines()
+        if len(dataCount) == 0:
+            return jsonify({'status': 'failed',
+                            'data': len(dataCount)}), 500
+        
+        jumlah_baris = log_process(save_path)
         
         # Verify file save
         if os.path.exists(save_path):
@@ -54,11 +61,12 @@ def upload_file():
                 'status': 'success', 
                 'filename': filename, 
                 'size': file_size,
-                'save_path': save_path
+                'save_path': save_path,
+                'jumlah_data': jumlah_baris
             }), 200
         else:
             print(f"File save failed: {save_path}")
-            return jsonify({'error': 'File save failed'}), 500
+            return jsonify({'status': 'failed'}), 500
         
     except Exception as e:
         print(f"Error: {str(e)}")

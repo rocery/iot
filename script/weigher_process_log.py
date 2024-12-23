@@ -3,11 +3,7 @@ import mysql.connector
 from mysql.connector import Error
 import logging
 
-# Nama file yang akan dibaca
-file_path = '../uploads/weigherLog31_20241219_153145.txt'
-
 # Fungsi untuk menyisipkan data ke MySQL
-
 def insert_data(cursor, data):
     try:
         # Cetak data sebelum insert
@@ -46,7 +42,13 @@ def insert_data_fail(cursor, data):
         import traceback
         traceback.print_exc()
 
+totalBaris = []
+def get_baris():
+    baris = totalBaris
+    return baris
+
 def log_process(file_path):
+    totalBaris = 0
     try:
         connection = mysql.connector.connect(
             host='192.168.15.223',
@@ -63,7 +65,8 @@ def log_process(file_path):
             with open(file_path, 'r') as file:
                 lines = file.readlines()
                 logging.info(f"Jumlah baris: {len(lines)}")
-
+                totalBaris = len(lines)
+                
                 for line in lines:
                     line = line.strip()
                     data = line.split(',')
@@ -96,6 +99,7 @@ def log_process(file_path):
                     except Exception as e:
                         logging.error(f"Gagal memproses baris: {line}")
                         logging.error(f"Error: {e}")
+                return totalBaris
 
     except Exception as e:
         logging.error(f"Kesalahan umum: {e}")
