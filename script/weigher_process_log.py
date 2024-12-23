@@ -51,9 +51,15 @@ def log_process(file_path):
     totalBaris = 0
     try:
         connection = mysql.connector.connect(
-            host='192.168.15.223',
-            user='admin',
-            password='itbekasioke',
+            #host='192.168.15.223',
+            #user='admin',
+            #password='itbekasioke',
+            #database='weigher',
+            #port='3306',
+
+            host='192.168.15.219',
+            user='ridho',
+            password='izzat02052008',
             database='weigher',
             port='3306'
         )
