@@ -42,10 +42,10 @@ def insert_data_fail(cursor, data):
         import traceback
         traceback.print_exc()
 
-totalBaris = []
-def get_baris():
-    baris = totalBaris
-    return baris
+# totalBaris = []
+# def get_baris():
+#     baris = totalBaris
+#     return baris
 
 def log_process(file_path):
     totalBaris = 0

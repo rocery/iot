@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import os
 from datetime import datetime
-from script.weigher_process_log import log_process, get_baris
+from script.weigher_process_log import log_process
 
 app = Flask(__name__)
 
