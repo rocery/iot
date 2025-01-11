@@ -7,6 +7,7 @@ import logging
 def insert_data(cursor, data):
     try:
         # Cetak data sebelum insert
+        print("--------------------------------------------------------------")
         print("Data sebelum insert:", data)
 
         sql_insert_query = """INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
@@ -15,6 +16,7 @@ def insert_data(cursor, data):
         # Cetak query dan data
         print("SQL Query:", sql_insert_query)
         print("Data untuk diinsert:", data)
+        print("--------------------------------------------------------------")
         
         cursor.execute(sql_insert_query, data)
     except Error as e:
@@ -77,7 +79,7 @@ def log_process(file_path):
                     line = line.strip()
                     data = line.split(',')
                     # print(len(data))
-                    if len(data) != 6:
+                    if len(data) != 7:
                         fail_data = [line, getTime()]
                         print(fail_data)
                         insert_data_fail(cursor, fail_data)
@@ -93,9 +95,10 @@ def log_process(file_path):
                             data[1].strip(),    # device_name
                             data[2].strip(),    # product
                             float(data[3].strip()),  # weight
-                            getTime(),          # date
+                            # getTime(),          # date
                             data[4].strip(),    # ip_address
-                            data[5].strip()     # wifi
+                            data[5].strip(),    # ip_address
+                            data[6].strip()     # wifi
                         ]
 
                         insert_data(cursor, processed_data)
