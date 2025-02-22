@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 from datetime import datetime
 from script.weigher_process_log import log_process
@@ -78,6 +78,11 @@ def upload_file():
         import traceback
         traceback.print_exc()
         return jsonify({'error': str(e)}), 400
+    
+@app.route('/iot', methods=['GET'])
+def iot():
+    return render_template('dashboard.html')
+
 
 if __name__ == '__main__':
     # Create uploads directory if it doesn't exist
