@@ -7,6 +7,4 @@
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 109-797-079
-192.168.10.10 - - [22/Feb/2025 11:59:58] "GET /iot HTTP/1.1" 200 -
-192.168.10.10 - - [22/Feb/2025 11:59:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Debugger PIN: 970-391-242
