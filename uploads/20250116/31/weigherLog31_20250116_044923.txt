@@ -1,1 +1,0 @@
-IoT-31,Weigher | Kerupuk 31,TIC TIC CBP, 1.96,2025-01-16 04:49:10,192.168.7.31,LAN

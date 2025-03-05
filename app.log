@@ -7,4 +7,285 @@
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 970-391-242
+ * Debugger PIN: 263-751-143
+192.168.7.32 - - [04/Mar/2025 14:49:36] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.32 - - [04/Mar/2025 14:49:36] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+Content-Type: multipart/form-data; boundary=------------------------abcdef123456
+Files: ImmutableMultiDict([('file', <FileStorage: 'weigherLog32.txt' ('text/plain')>)])
+Data received: 0
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:13', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:13', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:14', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:14', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:15', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:15', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:16', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 0.0, '2025-03-04 14:49:16', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+File saved: weigherLog32_20250304_144936.txt, Size: 336 bytes
+First line of file: IoT-32,Weigher | Kerupuk 32,TIC TIC CBP, 0.00,2025-03-04 14:49:13,192.168.7.32,LAN
+Response JSON: {'status': 'success', 'filename': 'weigherLog32_20250304_144936.txt', 'size': 336, 'save_path': 'uploads/20250304/32/weigherLog32_20250304_144936.txt', 'jumlah_data': 4}
+Content-Type: multipart/form-data; boundary=------------------------abcdef123456
+Files: ImmutableMultiDict([('file', <FileStorage: 'weigherLog32.txt' ('text/plain')>)])
+Data received: 0
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:54', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:54', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:56', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:56', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:57', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:57', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:57', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:57', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:58', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:58', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:58', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:58', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:59', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:49:59', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:49:59', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:49:59', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:00', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:00', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: 192.168.7.32 - - [04/Mar/2025 14:50:07] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.32 - - [04/Mar/2025 14:50:07] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:01', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:03', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:03', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:03', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:03', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:04', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:04', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:04', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:04', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:05', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:05', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:05', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:05', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+File saved: weigherLog32_20250304_145007.txt, Size: 1512 bytes
+First line of file: IoT-32,Weigher | Kerupuk 32,TIC TIC CBP,-0.00,2025-03-04 14:49:54,192.168.7.32,LAN
+Response JSON: {'status': 'success', 'filename': 'weigherLog32_20250304_145007.txt', 'size': 1512, 'save_path': 'uploads/20250304/32/weigherLog32_20250304_145007.txt', 'jumlah_data': 18}
+Content-Type: multipart/form-data; boundary=------------------------abcdef123456
+Files: ImmutableMultiDict([('file', <FileStorage: 'weigherLog32.txt' ('text/plain')>)])
+Data received: 0
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:07', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:07', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:07', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:07', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:08', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 14:50:08', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:08', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:08', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:09', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:09', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:09', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: 192.168.7.32 - - [04/Mar/2025 14:50:37] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.32 - - [04/Mar/2025 14:50:37] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.0, '2025-03-04 14:50:09', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+File saved: weigherLog32_20250304_145037.txt, Size: 504 bytes
+First line of file: IoT-32,Weigher | Kerupuk 32,TIC TIC CBP,-0.00,2025-03-04 14:50:07,192.168.7.32,LAN
+Response JSON: {'status': 'success', 'filename': 'weigherLog32_20250304_145037.txt', 'size': 504, 'save_path': 'uploads/20250304/32/weigherLog32_20250304_145037.txt', 'jumlah_data': 6}
+Content-Type: multipart/form-data; boundary=------------------------abcdef123456
+Files: ImmutableMultiDict([('file', <FileStorage: 'weigherLog32.txt' ('text/plain')>)])
+Data received: 0
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 16:04:11', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', -0.01, '2025-03-04 16:04:11', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 6.47, '2025-03-04 16:04:14', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 6.47, '2025-03-04 16:04:14', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.78, '2025-03-04 16:04:15', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.78, '2025-03-04 16:04:15', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.61, '2025-03-04 16:04:15', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.61, '2025-03-04 16:04:15', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.16, '2025-03-04 16:04:16', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 5.16, '2025-03-04 16:04:16', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.96, '2025-03-04 16:04:16', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.96, '2025-03-04 16:04:16', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.32, '2025-03-04 16:04:18', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.32, '2025-03-04 16:04:18', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.02, '2025-03-04 16:04:19', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 4.02, '2025-03-04 16:04:19', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.56, '2025-03-04 16:04:19', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.56, '2025-03-04 16:04:19', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.38, '2025-03-04 16:04:20', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.38, '2025-03-04 16:04:20', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.21, '2025-03-04 16:04:20', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.21, '2025-03-04 16:04:20', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.07, '2025-03-04 16:04:22', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 3.07, '2025-03-04 16:04:22', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 2.97, '2025-03-04 16:04:22', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 2.97, '2025-03-04 16:04:22', '192.168.7.32', 'LAN']
+--------------------------------------------------------------
+--------------------------------------------------------------
+Data sebelum insert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 2.78, '2025-03-04 16:04:23', '192.168.7.32', 'LAN']
+SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, date, ip_address, wifi) 
+                              VALUES (%s, %s, %s, %s, %s, %s, %s)
+Data untuk diinsert: 192.168.7.32 - - [04/Mar/2025 16:04:25] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.32 - - [04/Mar/2025 16:04:25] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+192.168.7.32 - - [04/Mar/2025 16:04:55] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.32 - - [04/Mar/2025 16:04:55] "POST /weigher/upload_log_weigher HTTP/1.1" 200 -
