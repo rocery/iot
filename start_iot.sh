@@ -14,4 +14,4 @@ if fuser 5001/tcp > /dev/null 2>&1; then
 fi
 
 # Run the Python application in the background and redirect output to a log file
-python3 app.py > app.log 2>&1 &
+python3 -u app.py > app.log 2>&1 &

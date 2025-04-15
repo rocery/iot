@@ -8,9 +8,6 @@ app = Flask(__name__)
 @app.route('/weigher/upload_log_weigher', methods=['POST'])
 def upload_file():
     try:
-        # Jika terjadi double data: kiri json dibawah
-        # return jsonify({'status': 'success'}), 200
-        
         # Print debug information
         print("Content-Type:", request.headers.get('Content-Type'))
         print("Files:", request.files)
@@ -74,7 +71,7 @@ def upload_file():
             return jsonify(response), 200
         else:
             print(f"File save failed: {save_path}")
-            return jsonify({'status': 'failed'}), 500
+            return jsonify({'status': 'success'}), 500
         
     except Exception as e:
         print(f"Error: {str(e)}")
