@@ -6290,3 +6290,8 @@ SQL Query: INSERT INTO data_weigher (device_id, device_name, product, weight, da
 Data untuk diinsert: ['IoT-32', 'Weigher | Kerupuk 32', 'TIC TIC CBP', 1.95, '2025-04-29 14:30:42', '192.168.7.32', 'LAN']
 --------------------------------------------------------------
 Async log processing completed for: uploads/20250429/16/weigherLog32_20250429_143116_20250429_154326.txt
+ * Detected change in '/home/sastr/iot/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/sastr/iot/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 172-841-678

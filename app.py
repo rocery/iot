@@ -5,7 +5,6 @@ from script.weigher_process_log import log_process
 
 app = Flask(__name__)
 
-    
 @app.route('/weigher/upload_log_weigher', methods=['POST'])
 def upload_file():
     try:
