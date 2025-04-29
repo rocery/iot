@@ -5,6 +5,7 @@ from script.weigher_process_log import log_process
 
 app = Flask(__name__)
 
+    
 @app.route('/weigher/upload_log_weigher', methods=['POST'])
 def upload_file():
     try:
@@ -36,45 +37,49 @@ def upload_file():
         dateToday = datetime.now().strftime("%Y%m%d")
         os.makedirs(os.path.join('uploads', dateToday, filename_without_ext[-2:]), exist_ok=True)
         save_path = os.path.join('uploads', dateToday, filename_without_ext[-2:], filename)
+        
+        # Simpan file
         file.save(save_path)
+        file_size = os.path.getsize(save_path)
         
-        dataCount = 0
-        with open(save_path, 'r') as file:
-            dataCount = file.readlines()
-        if len(dataCount) == 0:
-            return jsonify({'status': 'failed',
-                            'data': len(dataCount)}), 500
+        # Hitung jumlah baris secara cepat (tanpa memuat seluruh file ke memori)
+        jumlah_baris = 0
+        with open(save_path, 'r') as f:
+            for _ in f:
+                jumlah_baris += 1
         
-        jumlah_baris = log_process(save_path)
+        if jumlah_baris == 0:
+            return jsonify({'status': 'failed', 'data': jumlah_baris}), 500
         
-        # Verify file save
-        if os.path.exists(save_path):
-            file_size = os.path.getsize(save_path)
-            print(f"File saved: {filename}, Size: {file_size} bytes")
-            
-            # Optional: Verify file content
+        # Kirim respons cepat tanpa menunggu log_process selesai
+        response = {
+            'status': 'success',
+            'filename': filename,
+            'size': file_size,
+            'save_path': save_path,
+            'jumlah_data': jumlah_baris
+        }
+        
+        # Print the response dictionary
+        print("Response JSON:", response)
+        
+        # Jalankan log_process di thread terpisah
+        def process_log_async():
             try:
-                with open(save_path, 'r') as f:
-                    first_line = f.readline().strip()
-                    print(f"First line of file: {first_line}")
-            except Exception as read_error:
-                print(f"Error reading file: {read_error}")
-            
-            response = {
-                'status': 'success',
-                'filename': filename,
-                'size': file_size,
-                'save_path': save_path,
-                'jumlah_data': jumlah_baris
-            }
-            
-            # Print the response dictionary
-            print("Response JSON:", response)
-            
-            return jsonify(response), 200
-        else:
-            print(f"File save failed: {save_path}")
-            return jsonify({'status': 'failed'}), 500
+                log_process(save_path)
+                print(f"Async log processing completed for: {save_path}")
+            except Exception as e:
+                print(f"Error in async log processing: {str(e)}")
+                import traceback
+                traceback.print_exc()
+        
+        # Mulai proses di background
+        import threading
+        thread = threading.Thread(target=process_log_async)
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify(response), 200
         
     except Exception as e:
         print(f"Error: {str(e)}")
